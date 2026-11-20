@@ -2,6 +2,7 @@ import {CONFIG} from './config.js';
 import {GROUPS,BOARDS} from './boards.js';
 
 'use strict';
+console.info('[Stokfeed Forums] frontend build: 2026-11-19-posting-v2');
 const $=id=>document.getElementById(id),view=$('view'),sidebar=$('board-sidebar'),modal=$('modal'),toast=$('toast');
 const registry=new Map(BOARDS.map(b=>[b.slug,b]));
 const state={route:0,search:'',sort:'active',directory:'',cookieReady:false,adminToken:'',lastError:''};
